@@ -21,7 +21,7 @@ print(b)
 
 #4
 a = list(map(int, input().split()))
-b = list(map(lambda w: (w + 45) / len(a), a))
+b = list(map(lambda w: (w + 40) / len(a), a))
 print(b)
 
 #5

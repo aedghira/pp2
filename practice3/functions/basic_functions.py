@@ -21,7 +21,7 @@ def pp2():
 
 #5
 def KBTU():
-  print('KBTU is the best university in Kazakhstan!')
+  print('KBTU is the best university in Kazakhstan!!!')
 
 #Example on W3schools
 def my_function():
