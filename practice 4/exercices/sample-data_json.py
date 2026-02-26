@@ -807,7 +807,7 @@ print('=========================================================================
 print('DN                                                 Description           Speed    MTU')  
 print('-------------------------------------------------- --------------------  ------  ------')
 
-for i in x["imdata"][:3]:
+for i in x["imdata"]:
     attributes = i["l1PhysIf"]["attributes"]
     
     dn = attributes["dn"]
