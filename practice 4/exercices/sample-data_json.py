@@ -807,14 +807,14 @@ print('=========================================================================
 print('DN                                                 Description           Speed    MTU')  
 print('-------------------------------------------------- --------------------  ------  ------')
 
-for i in x["imdata"]:
+for i in x["imdata"][:3]:
     attributes = i["l1PhysIf"]["attributes"]
     
     dn = attributes["dn"]
     descr = attributes["descr"]
     speed = attributes["speed"]
     mtu = attributes["mtu"]
-    if i == 3:
-        break
 
-print(f"{dn:50} {descr:20} {speed:6} {mtu:6}")
+    print(f"{dn:50} {descr:20} {speed:6} {mtu:6}")
+    
+    
