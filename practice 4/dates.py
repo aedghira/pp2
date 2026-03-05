@@ -99,7 +99,7 @@ print(x.strftime("%B"))
 
 #2
 
-x = datetime.datetime(2023, 7, 12)
+x = datetime.datetime(2023, 7, 11)
 
 print(x.year)
 print(x.strftime("%d"))
