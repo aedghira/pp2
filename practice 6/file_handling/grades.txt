@@ -1,0 +1,10 @@
+Student : Hermione Ghauri
+Year : 2
+Scores in disciplineds for the attestation period :
+Computer Science : 58.00
+Calculus III : 60.00
+Differential equations : 57.00
+Philosophy : 59.00
+Physics II : 60.00
+History : 58.00
+She did a great job!!!!!!!!!!
