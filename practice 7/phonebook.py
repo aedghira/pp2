@@ -334,7 +334,7 @@ class PhoneBook:
             print("6. Exit")
             print("=" * 50)
 
-            choice = input("\nSelect action (1-6): ").strip()
+            choice = input("\nSelect action (1-8): ").strip()
 
             if choice == "1":
                 csv_path = input("Enter CSV file path: ").strip()
