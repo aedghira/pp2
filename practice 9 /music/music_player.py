@@ -38,12 +38,16 @@ rect.center = (125, 125)
 done = False
 black = (0, 0, 0)
 white = (255, 255, 255)
-
-tracks = ["swalla.wav", "senen_kein.wav",  
-          "baika.mp3", "buttons.mp3",
-          "Casablanca.mp3", "kanyelele.mp3", 
-          "heart-attack.mp3","sidetoside.mp3", 
-          "7rings.mp3"]
+tracks = [ os.path.join(script_dir, 'swalla.wav'), 
+           os.path.join(script_dir, 'senen_kein.wav'), 
+           os.path.join(script_dir, 'baika.mp3'),
+           os.path.join(script_dir, 'buttons.mp3') ,
+            os.path.join(script_dir, 'Casablanca.mp3') ,
+            os.path.join(script_dir, 'kanyelele.mp3') , 
+            os.path.join(script_dir, 'heart-attack.mp3'), 
+            os.path.join(script_dir, 'sidetoside.mp3'), 
+            os.path.join(script_dir, '7rings.mp3')
+          ]
 
 
 current = 0
