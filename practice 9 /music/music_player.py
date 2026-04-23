@@ -58,7 +58,7 @@ font1 = pygame.font.SysFont('Times New Roman', 25)
 text1 = font.render(" MUSIC PLAYER ", True, white)
 text4 = font.render('All songs', True, white)
 
-rect1 = text1.get_rect(topleft=(100, 60))
+rect1 = text1.get_rect(topleft=(90, 60))
 rect3 = text4.get_rect(topleft=(175, 110))
 
 in_player = False
@@ -68,9 +68,9 @@ def draw_main_menu():
     screen.fill((255, 255, 255))
     screen.blit(img, rect)
     screen.blit(text1, rect1)
-    pygame.draw.rect(screen, black, rect1, 3)
+    pygame.draw.rect(screen, black, rect1, 1)
     screen.blit(text4, rect3)
-    pygame.draw.rect(screen, black, rect3, 3)
+    pygame.draw.rect(screen, black, rect3, 1)
 
 font2 = pygame.font.SysFont('Times New Roman', 20)
 
@@ -88,15 +88,15 @@ back_rect = back_text.get_rect(topleft=(230, 290))
 next_rect = next_text.get_rect(topleft=(55, 320))
 quit_rect = quit_text.get_rect(topleft=(135, 320))
 
-t1 = font2.render('1.SWALLA', True, black)
-t2 = font2.render('2.SENEN KEIN', True, black)
-t3 = font2.render('3.BAIKA', True, black)
-t4 = font2.render('4.BUTTONS', True, black)
-t5 = font2.render('5.CASABLANCA', True, black)
-t6 = font2.render('6.KANYELELE', True, black)
-t7 = font2.render('7.HEART ATTACK', True, black)
-t8 = font2.render('8.SIDE TO SIDE', True, black)
-t9 = font2.render('9.7 RINGS', True, black)
+t1 = font2.render('SWALLA', True, black)
+t2 = font2.render('SENEN KEIN', True, black)
+t3 = font2.render('BAIKA', True, black)
+t4 = font2.render('BUTTONS', True, black)
+t5 = font2.render('CASABLANCA', True, black)
+t6 = font2.render('KANYELELE', True, black)
+t7 = font2.render('HEART ATTACK', True, black)
+t8 = font2.render('SIDE TO SIDE', True, black)
+t9 = font2.render('7 RINGS', True, black)
 
 t_rects = [
     t1.get_rect(topleft=(310,40)),
