@@ -1,8 +1,9 @@
 DB_CONFIG = {
     'host': 'localhost',          
     'port': 5432,               
-    'user': 'postgres',           
-    'password': 'Aedghira2008-'  
+    'user': 'algida',           
+    'password': '',
+    'database': 'postgres'
 }
 
 APP_CONFIG = {

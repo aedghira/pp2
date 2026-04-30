@@ -71,8 +71,7 @@ while running:
     coin_rect.y += coin_speed
     if coin_rect.top > HEIGHT:
         coin_rect.center = (random.randint(50, WIDTH-50), -50)
-
-
+        
     if player_rect.colliderect(enemy_rect):
         print("Game Over!")
         pygame.quit()

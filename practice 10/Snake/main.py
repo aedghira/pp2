@@ -42,18 +42,18 @@ score = 0
 level = 1
 speed = 5
 
-font = pygame.font.SysFont("Arial", 24)
+font = pygame.font.SysFont("Times New Roman", 24)
 
 running = True
 while running:
-    screen.blit(background, (0, 0))  # фон суреті
+    screen.blit(background, (0, 0))  
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
 
-    # Басқару
+  
     keys = pygame.key.get_pressed()
     if keys[pygame.K_UP] and direction != (0, CELL_SIZE):
         direction = (0, -CELL_SIZE)
@@ -64,17 +64,15 @@ while running:
     if keys[pygame.K_RIGHT] and direction != (-CELL_SIZE, 0):
         direction = (CELL_SIZE, 0)
 
-    # Жылан қозғалысы
     new_head = (snake[0][0] + direction[0], snake[0][1] + direction[1])
 
-    # Қабырғаға соғылу
     if (new_head[0] < 0 or new_head[0] >= WIDTH or
         new_head[1] < 0 or new_head[1] >= HEIGHT):
         print("Game Over! Snake hit the wall.")
         pygame.quit()
         sys.exit()
 
-    # Өзіне соғылу
+
     if new_head in snake:
         print("Game Over! Snake hit itself.")
         pygame.quit()
@@ -82,7 +80,7 @@ while running:
 
     snake.insert(0, new_head)
 
-    # Тамақ жеу
+   
     if new_head == food:
         score += 1
         food = random_food()
@@ -92,12 +90,11 @@ while running:
     else:
         snake.pop()
 
-    # Сызу
+    
     for segment in snake:
         screen.blit(snake_img, (segment[0], segment[1]))
     screen.blit(food_img, (food[0], food[1]))
 
-    # Ұпай және деңгей
     score_text = font.render(f"Score: {score}", True, WHITE)
     level_text = font.render(f"Level: {level}", True, WHITE)
     screen.blit(score_text, (10, 10))

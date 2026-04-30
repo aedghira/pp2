@@ -1,0 +1,8 @@
+name,phone,type,email,birthday,group
+Alice Smith,+7-701-111-2233,mobile,alice@gmail.com,1995-03-15,Friend
+Bob Johnson,+7-702-333-4455,work,bob@work.kz,1988-07-22,Work
+Carol White,+7-705-555-6677,home,carol@mail.ru,1992-11-30,Family
+David Brown,+7-707-777-8899,mobile,david@gmail.com,2000-01-05,Friend
+Eve Davis,+7-708-999-0011,mobile,eve@outlook.com,1997-06-18,Other
+Frank Miller,+7-701-222-3344,work,frank@company.kz,1985-09-09,Work
+Grace Wilson,+7-702-444-5566,home,,1993-04-25,Family
